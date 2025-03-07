@@ -58,7 +58,7 @@ label_wind_speed = Label(text="Wind Speed", font=(FONT_NAME, 16, "bold"))
 label_wind_speed.place(x=100, y=300)
 
 
-start_button = Button(text="Start", font=(FONT_NAME, 16, "bold"), command=get_weather)
+start_button = Button(text="Start", font=(FONT_NAME, 16, "bold"), command= lambda: get_weather(city))
 start_button.place(x=550, y=150)
 
 
