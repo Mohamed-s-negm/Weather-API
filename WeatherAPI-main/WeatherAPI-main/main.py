@@ -6,9 +6,9 @@ import json
 FONT_NAME = "Courier"
 API = "98c9329ae008542ccdf45b8822d95097"
 
-def get_weather():
+def get_weather(city):
     # Get city name first
-    city = city_entry.get()
+    
     # Then use it in the URL
     URL_L = f"http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={API}"
     
@@ -43,6 +43,7 @@ city_label.place(x=100, y=70)
 
 city_entry = Entry(width=10)
 city_entry.place(x=100, y=100)
+city = city_entry.get()
 
 label_temp = Label(text="Temperature", font=(FONT_NAME, 16, "bold"))
 label_temp.place(x=100, y=150)
