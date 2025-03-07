@@ -6,7 +6,7 @@ import json
 FONT_NAME = "Courier"
 API = "98c9329ae008542ccdf45b8822d95097"
 
-def get_weather(city):
+def get_weather():
     # Get city name first
     city = city_entry.get()
     # Then use it in the URL
